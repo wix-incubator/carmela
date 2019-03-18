@@ -1,0 +1,36 @@
+{
+  "name": "carmela",
+  "version": "0.1.0",
+  "description": "carmi interpreter",
+  "main": "carmela.js",
+  "scripts": {
+    "test": "jasmine",
+    "build": "node node_modules/carmi/bin/carmi --no-cache --debug --format iife --source todos/todosCarmi.js > todos/todos.js"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "carmi": "^1.0.191",
+    "loadsh": "0.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wix-private/carmela.git"
+  },
+  "keywords": [
+    "carmi",
+    "bolt",
+    "interpreter"
+  ],
+  "author": "Shai Ben-Yehuda (shaiby@wix.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wix-private/carmela/issues"
+  },
+  "homepage": "https://github.com/wix-private/carmela#readme",
+  "devDependencies": {
+    "jasmine": "^3.3.1"
+  }
+}
