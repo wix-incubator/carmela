@@ -1162,7 +1162,48 @@ $tainted = new WeakSet();
 
     if (/* DEBUG */true) {
       Object.assign($res, {
-        $ast: () => { return  },
+        $ast: () => { return {
+  "todos": [
+    "*get*",
+    "todos",
+    "*root*"
+  ],
+  "doneTasks": [
+    "*filterBy*",
+    [
+      "*func*",
+      [
+        "*get*",
+        "done",
+        "*val*"
+      ]
+    ],
+    [
+      "*get*",
+      "todos",
+      "*topLevel*"
+    ]
+  ],
+  "pendingTodos": [
+    "*filterBy*",
+    [
+      "*func*",
+      [
+        "*not*",
+        [
+          "*get*",
+          "done",
+          "*val*"
+        ]
+      ]
+    ],
+    [
+      "*get*",
+      "todos",
+      "*topLevel*"
+    ]
+  ]
+} },
         $source: () => null
       })
     }

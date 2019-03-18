@@ -11,9 +11,9 @@ It can be used for rapid development and debug of carmi expressions
 3. open chrome debugger
 4. goto console
 5. change to inner iframe (change the picklist from 'top' to 'about:blank' )
-6. write <code>pendingTodos = todos.filterBy(val => val.get('done').not()).$</code> and see the results
-7. write <code>doneTasks = todos.filterBy(val => val.get('done')).$</code> and see the results
-8. goto todos/todosCarmi.js and add the line <code>const doneTasks = todos.filterBy(val => val.get('done'))</code> also add 'doneTasks' to hte exports
+6. write `pendingTodos = todos.filterBy(val => val.get('done').not()).$` and see the results
+7. write `doneTasks = todos.filterBy(val => val.get('done')).$` and see the results
+8. goto todos/todosCarmi.js and add the line `const doneTasks = todos.filterBy(val => val.get('done'))` also add 'doneTasks' to hte exports
 9. recompile carmi with doneTasks - yarn build:todos
 10. refresh the browser and add more carmi expressions based on doneTasks
 
