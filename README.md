@@ -6,7 +6,7 @@ Carmela is a tiny interpreter for carmi implemented with lodash.
 It can be used for rapid development and debug of carmi expressions
 
 ## Getting Started. Todos sample:
-1. git clone git@github.com:wix-private/carmela.git, cd carmela, yarn && yarn build
+1. git clone git@github.com:wix-incubator/carmela.git && cd carmela && yarn && yarn build
 2. open chrome with `open ./carmela-todos.html` or `file:///MY_PROJECT_DIR/carmela/carmela-todos.html`
 3. open chrome debugger
 4. goto console
